@@ -11,6 +11,7 @@
 <div id="vueapp">
     {{ greeting }}
     {{ message }}
+    <div v-html="htmlcontent"></div>
 </div>
 
 <script>
@@ -19,7 +20,8 @@
         data: {
             greeting: 'Hello World!',
             message: "I'm learning VUE for the first time!"
-        }
+        },
+        htmlcontent : "<h1>VUE Template</h1>"
     });
 </script>
     
